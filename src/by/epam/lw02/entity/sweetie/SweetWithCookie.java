@@ -21,4 +21,41 @@ public class SweetWithCookie extends Sweet{
         this.typeOfCookie = typeOfCookie;
     }
     
+    @Override
+    public boolean equals(Object obj){
+        if(this == obj){
+            return true;
+        }
+        if(null == obj){
+            return false;
+        }
+        if(getClass() != obj.getClass()){
+            return false;
+        }
+        
+        SweetWithCookie sweetWithCookie = (SweetWithCookie)obj;
+        if(!super.equals(sweetWithCookie)){
+            return false;
+        }
+        if(null == typeOfCookie){
+            return typeOfCookie == sweetWithCookie.typeOfCookie;
+        }
+        else{
+            if(!typeOfCookie.equals(sweetWithCookie.typeOfCookie)){
+                return false;
+            }
+        }
+        return true;
+    }
+    
+    @Override
+    public int hashCode(){
+        return (int)(super.hashCode() + ((null == typeOfCookie) ? 0 : typeOfCookie.hashCode()));
+    }
+    
+    @Override
+    public String toString(){
+        return getClass().getName() + "@" + "typeOfCookie: " + typeOfCookie;
+    }
+    
 }

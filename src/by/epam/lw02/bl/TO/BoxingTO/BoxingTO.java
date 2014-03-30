@@ -4,9 +4,9 @@
  * and open the template in the editor.
  */
 
-package by.epam.lw02.controller.TO.BoxingTO;
+package by.epam.lw02.bl.TO.BoxingTO;
 
-import by.epam.lw02.controller.TO.TO;
+import by.epam.lw02.bl.TO.TO;
 import java.awt.Color;
 
 /**

@@ -22,4 +22,41 @@ public class СartridgePaper extends Boxing{
         super(boxingColor,tapeColor,bowColor);
         this.typeOfPaper = typeOfPaper;
     }
+    
+    @Override
+    public boolean equals(Object obj){
+        if(this == obj){
+            return true;
+        }
+        if(null == obj){
+            return false;
+        }
+        if(getClass() != obj.getClass()){
+            return false;
+        }
+        
+        СartridgePaper cartridgePaper = (СartridgePaper)obj;
+        if(!super.equals(cartridgePaper)){
+            return false;
+        }
+        if(null == typeOfPaper){
+            return typeOfPaper == cartridgePaper.typeOfPaper;
+        }
+        else{
+            if(!typeOfPaper.equals(cartridgePaper.typeOfPaper)){
+                return false;
+            }
+        }
+        return true;
+    }
+    
+    @Override
+    public int hashCode(){
+        return (int)(super.hashCode() + ((null == typeOfPaper) ? 0 : typeOfPaper.hashCode()));
+    }
+    
+    @Override
+    public String toString(){
+        return getClass().getName() + "@" + "typeOfPaper: " + typeOfPaper;
+    }
 }

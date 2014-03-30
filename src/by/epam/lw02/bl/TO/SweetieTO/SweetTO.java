@@ -4,17 +4,17 @@
  * and open the template in the editor.
  */
 
-package by.epam.lw02.controller.TO.SweetieTO;
+package by.epam.lw02.bl.TO.SweetieTO;
 
 /**
  *
  * @author Anna
  */
-public class JellySweetTO extends SweetieTO{
-    public String jellyTaste;
+public class SweetTO extends SweetieTO{
+    public String typeOfChocolate;
     
-    public JellySweetTO(int numberOfObject,int sweetieSize,String jellyTaste){
+    public SweetTO(int numberOfObject,int sweetieSize,String typeOfChocolate){
         super(numberOfObject, sweetieSize);
-        this.jellyTaste = jellyTaste;
+        this.typeOfChocolate = typeOfChocolate;
     }
 }

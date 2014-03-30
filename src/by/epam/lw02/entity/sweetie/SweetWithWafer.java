@@ -20,4 +20,41 @@ public class SweetWithWafer extends Sweet{
         super(sweetieSize, typeOfChocolate);
         this.typeOfWafer = typeOfWafer;
     }
+    
+    @Override
+    public boolean equals(Object obj){
+        if(this == obj){
+            return true;
+        }
+        if(null == obj){
+            return false;
+        }
+        if(getClass() != obj.getClass()){
+            return false;
+        }
+        
+        SweetWithWafer sweetWithWafer = (SweetWithWafer)obj;
+        if(!super.equals(sweetWithWafer)){
+            return false;
+        }
+        if(null == typeOfWafer){
+            return typeOfWafer == sweetWithWafer.typeOfWafer;
+        }
+        else{
+            if(!typeOfWafer.equals(sweetWithWafer.typeOfWafer)){
+                return false;
+            }
+        }
+        return true;
+    }
+    
+    @Override
+    public int hashCode(){
+        return (int)(super.hashCode() + ((null == typeOfWafer) ? 0 : typeOfWafer.hashCode()));
+    }
+    
+    @Override
+    public String toString(){
+        return getClass().getName() + "@" + "typeOfWafer: " + typeOfWafer;
+    }
 }

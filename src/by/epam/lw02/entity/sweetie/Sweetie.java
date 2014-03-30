@@ -19,4 +19,34 @@ public class Sweetie {
     public Sweetie(int sweetieSize){
         this.sweetieSize = sweetieSize;
     }
+    
+    @Override
+    public boolean equals(Object obj){
+        if(this == obj){
+            return true;
+        }
+        if(null == obj){
+            return false;
+        }
+        if(getClass() != obj.getClass()){
+            return false;
+        }
+        
+        Sweetie sweetie = (Sweetie)obj;
+        if(sweetie.sweetieSize != sweetieSize){
+            return false;
+        }
+        
+        return true;
+    }
+    
+    @Override
+    public int hashCode(){
+        return (int)(sweetieSize*31);
+    }
+    
+    @Override
+    public String toString(){
+        return getClass().getName() + "@" + "sweetieSize: " + sweetieSize;
+    }
 }

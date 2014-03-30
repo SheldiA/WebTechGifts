@@ -6,8 +6,8 @@
 
 package by.epam.lw02.bl;
 
+import by.epam.lw02.bl.TO.SweetieTO.*;
 import by.epam.lw02.constant.SweetieConstant;
-import by.epam.lw02.controller.TO.SweetieTO.*;
 import by.epam.lw02.entity.sweetie.*;
 
 /**

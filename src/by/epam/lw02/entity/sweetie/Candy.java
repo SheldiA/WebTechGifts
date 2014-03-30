@@ -20,4 +20,41 @@ public class Candy extends Sweetie{
         super(sweetieSize);
         this.candyTaste = candyTaste;
     }
+    
+    @Override
+    public boolean equals(Object obj){
+        if(this == obj){
+            return true;
+        }
+        if(null == obj){
+            return false;
+        }
+        if(getClass() != obj.getClass()){
+            return false;
+        }
+        
+        Candy candy = (Candy)obj;
+        if(!super.equals(candy)){
+            return false;
+        }
+        if(null == candyTaste){
+            return candyTaste == candy.candyTaste;
+        }
+        else{
+            if(!candyTaste.equals(candy.candyTaste)){
+                return false;
+            }
+        }
+        return true;
+    }
+    
+    @Override
+    public int hashCode(){
+        return (int)(super.hashCode() + ((null == candyTaste) ? 0 : candyTaste.hashCode()));
+    }
+    
+    @Override
+    public String toString(){
+        return getClass().getName() + "@" + "candyTaste: " + candyTaste;
+    }
 }
