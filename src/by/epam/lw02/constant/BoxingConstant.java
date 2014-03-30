@@ -10,6 +10,12 @@ package by.epam.lw02.constant;
  *
  * @author Anna
  */
-public class BoxingConstant {
+public final class BoxingConstant {
+    public static int BOX_NUMBER = 1;
+    public static int FOILED_PAPER_NUMBER = 2;
+    public static int CARTRIDGE_PAPER_NUMBER = 3;
     
+    private BoxingConstant(){
+        
+    }
 }

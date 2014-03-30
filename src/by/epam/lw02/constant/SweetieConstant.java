@@ -10,6 +10,14 @@ package by.epam.lw02.constant;
  *
  * @author Anna
  */
-public class SweetieConstant {
+public final class SweetieConstant {
+    public static int SWEEET_NUMBER = 1;
+    public static int CANDY_NUMBER = 2;
+    public static int JELLY_SWEEET_NUMBER = 3;
+    public static int SWEEET_WITH_COOKIE_NUMBER = 4;
+    public static int SWEEET_WITH_WAFER_NUMBER = 5;
     
+    private SweetieConstant(){
+        
+    }
 }
