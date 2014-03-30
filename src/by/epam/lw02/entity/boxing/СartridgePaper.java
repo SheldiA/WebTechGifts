@@ -13,7 +13,13 @@ import java.awt.Color;
  * @author Anna
  */
 public class СartridgePaper extends Boxing{
-    public СartridgePaper(Color boxingColor,Color tapeColor,Color bowColor){
+    private String typeOfPaper;
+    public String getTypeOfPaper(){
+        return typeOfPaper;
+    }
+    
+    public СartridgePaper(Color boxingColor,Color tapeColor,Color bowColor,String typeOfPaper){
         super(boxingColor,tapeColor,bowColor);
+        this.typeOfPaper = typeOfPaper;
     }
 }

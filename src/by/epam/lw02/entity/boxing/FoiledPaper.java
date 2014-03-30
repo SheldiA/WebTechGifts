@@ -17,6 +17,7 @@ public class FoiledPaper extends Boxing{
     public String getTypeOfFoil(){
         return typeOfFoil;
     }
+    
     public FoiledPaper(Color boxingColor,Color tapeColor,Color bowColor,String typeOfFoil){
         super(boxingColor, tapeColor, bowColor);
         this.typeOfFoil = typeOfFoil;
