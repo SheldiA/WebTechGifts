@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package by.epam.lw02.bl.TO;
+package by.epam.lw02.controller.TO;
 
 /**
  *

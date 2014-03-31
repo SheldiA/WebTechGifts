@@ -55,6 +55,6 @@ public class Sweet extends Sweetie{
     
     @Override
     public String toString(){
-        return getClass().getName() + "@" + "typeOfChocolate: " + typeOfChocolate;
+        return getClass().getName() + "@" + "typeOfChocolate: " + typeOfChocolate + " " + super.toString();
     }
 }

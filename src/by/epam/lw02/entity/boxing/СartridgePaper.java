@@ -57,6 +57,6 @@ public class СartridgePaper extends Boxing{
     
     @Override
     public String toString(){
-        return getClass().getName() + "@" + "typeOfPaper: " + typeOfPaper;
+        return getClass().getName() + "@" + "typeOfPaper: " + typeOfPaper + " " + super.toString();
     }
 }

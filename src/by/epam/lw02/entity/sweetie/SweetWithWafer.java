@@ -55,6 +55,6 @@ public class SweetWithWafer extends Sweet{
     
     @Override
     public String toString(){
-        return getClass().getName() + "@" + "typeOfWafer: " + typeOfWafer;
+        return getClass().getName() + "@" + "typeOfWafer: " + typeOfWafer + " " + super.toString();
     }
 }

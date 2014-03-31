@@ -6,8 +6,8 @@
 
 package by.epam.lw02.bl;
 
-import by.epam.lw02.bl.TO.BoxingTO.BoxingTO;
-import by.epam.lw02.bl.TO.SweetieTO.SweetieTO;
+import by.epam.lw02.controller.TO.BoxingTO.BoxingTO;
+import by.epam.lw02.controller.TO.SweetieTO.SweetieTO;
 import by.epam.lw02.entity.SweetGift;
 import by.epam.lw02.entity.boxing.Boxing;
 import by.epam.lw02.entity.sweetie.Sweetie;
@@ -39,7 +39,7 @@ public class GiftBuilder {
     
     public boolean addSweetie(SweetieTO sweetieTO){
         Sweetie sweetie = SweetieFactory.getInstance().CreateSweetie(sweetieTO);
-        return (sweetie != null) ? gift.addSweetie(sweetie) : false;
+        return (null != sweetie) ? gift.addSweetie(sweetie) : false;
     }
     
     public static GiftBuilder getInstance() {

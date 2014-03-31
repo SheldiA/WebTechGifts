@@ -55,7 +55,7 @@ public class SweetWithCookie extends Sweet{
     
     @Override
     public String toString(){
-        return getClass().getName() + "@" + "typeOfCookie: " + typeOfCookie;
+        return getClass().getName() + "@" + "typeOfCookie: " + typeOfCookie + " " + super.toString();
     }
     
 }

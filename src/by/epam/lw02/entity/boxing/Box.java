@@ -57,6 +57,6 @@ public class Box extends Boxing{
     
     @Override
     public String toString(){
-        return getClass().getName() + "@" + "boxShape: " + boxShape;
+        return getClass().getName() + "@" + "boxShape: " + boxShape + " " + super.toString();
     }
 }

@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package by.epam.lw02.bl.TO.BoxingTO;
+package by.epam.lw02.controller.TO.BoxingTO;
 
 import java.awt.Color;
 
@@ -12,11 +12,11 @@ import java.awt.Color;
  *
  * @author Anna
  */
-public class СartridgePaperTO extends BoxingTO{
-    public String typeOfPaper;
+public class BoxTO extends BoxingTO{
+    public String boxShape;
     
-    public СartridgePaperTO(int numberOfObject,Color boxingColor,Color tapeColor,Color bowColor,String typeOfPaper){
+    public BoxTO(int numberOfObject,Color boxingColor,Color tapeColor,Color bowColor,String boxShape){
         super(numberOfObject,boxingColor, tapeColor, bowColor);
-        this.typeOfPaper = typeOfPaper;
+        this.boxShape = boxShape;
     }
 }

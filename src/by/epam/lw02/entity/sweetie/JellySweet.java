@@ -55,6 +55,6 @@ public class JellySweet extends Sweetie {
     
     @Override
     public String toString(){
-        return getClass().getName() + "@" + "jellyTaste: " + jellyTaste;
+        return getClass().getName() + "@" + "jellyTaste: " + jellyTaste + " " + super.toString();
     }
 }

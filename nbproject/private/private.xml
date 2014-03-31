@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
-    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="1">
+        <file>
+            <url>src/by/epam/lw02/controller/Controller.java</url>
+            <bookmark id="1">
+                <name/>
+                <line>26</line>
+                <key/>
+            </bookmark>
+        </file>
+    </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/MyProjects/ProjectsJava/Gifts/src/gifts/Gifts.java</file>
+            <file>file:/D:/MyProjects/ProjectsJava/Gifts/src/by/epam/lw02/controller/Controller.java</file>
+            <file>file:/D:/MyProjects/ProjectsJava/Gifts/src/by/epam/lw02/entity/boxing/Box.java</file>
+            <file>file:/D:/MyProjects/ProjectsJava/Gifts/src/by/epam/lw02/entity/SweetGift.java</file>
+            <file>file:/D:/MyProjects/ProjectsJava/Gifts/src/by/epam/lw02/view/View.java</file>
         </group>
     </open-files>
 </project-private>

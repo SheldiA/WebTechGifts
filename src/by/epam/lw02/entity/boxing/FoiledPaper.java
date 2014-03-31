@@ -57,6 +57,6 @@ public class FoiledPaper extends Boxing{
     
     @Override
     public String toString(){
-        return getClass().getName() + "@" + "typeOfFoil: " + typeOfFoil;
+        return getClass().getName() + "@" + "typeOfFoil: " + typeOfFoil + " " + super.toString();
     }
 }

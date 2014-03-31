@@ -6,7 +6,7 @@
 
 package by.epam.lw02.bl;
 
-import by.epam.lw02.bl.TO.BoxingTO.*;
+import by.epam.lw02.controller.TO.BoxingTO.*;
 import by.epam.lw02.constant.BoxingConstant;
 import by.epam.lw02.entity.boxing.*;
 
